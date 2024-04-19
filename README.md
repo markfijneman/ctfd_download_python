@@ -5,7 +5,7 @@ A script to download all the challenges and files from the CTFd instance.
 
 #### Clone this repo:
 
-    git clone https://github.com/jselliott/ctfd_download_python.git
+    git clone https://github.com/markfijneman/ctfd_download_python.git
 
 #### Install requirements:
 
