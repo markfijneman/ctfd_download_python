@@ -86,7 +86,10 @@ def main(argv):
             catDir = os.path.join(outputDir, "challenges", Y["category"])
             challDir = os.path.join(catDir, slugify(Y["name"]))
 
+            challDir = re.sub(r'[*?:"<>|]',"",challDir)
             os.makedirs(challDir, exist_ok=True)
+
+            catDir = re.sub(r'[*?:"<>|]',"",catDir)
             os.makedirs(catDir, exist_ok=True)
 
             with open(os.path.join(challDir, "README.md"), "w", encoding='utf-8') as chall_readme:
