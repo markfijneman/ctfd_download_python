@@ -89,7 +89,7 @@ def main(argv):
             os.makedirs(challDir, exist_ok=True)
             os.makedirs(catDir, exist_ok=True)
 
-            with open(os.path.join(challDir, "README.md"), "w") as chall_readme:
+            with open(os.path.join(challDir, "README.md"), "w", encoding='utf-8') as chall_readme:
                 logging.info("Creating challenge readme: %s" % Y["name"])
                 chall_readme.write("# %s\n\n" % Y["name"])
                 chall_readme.write("## Description\n\n%s\n\n" % Y["description"])
