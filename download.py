@@ -168,7 +168,7 @@ def main(argv):
 
                 chall_readme.close()
 
-        with open(os.path.join(outputDir, "README.md"), "w") as ctf_readme:
+        with open(os.path.join(outputDir, "README.md"), "w", encoding='utf-8') as ctf_readme:
 
             logging.info("Writing main CTF readme...")
 
